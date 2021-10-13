@@ -208,7 +208,7 @@ section .title::after {
   background: #111;
 }
 .services .title::before,
-.team .title::before{
+.team .title::before {
   background: #fff;
 }
 .services .title::after,
@@ -325,32 +325,62 @@ section .title::after {
 .team .title::after {
   content: "who is with me";
 }
-.team .carousel .card{
-background: #222;
-border-radius: 6px;
-padding: 25px 35px;
-text-align: center;
+.team .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  transition: all 0.3 ease;
 }
-.team .carousel .card:hover{
-  background: center;
+.team .carousel .card:hover {
+  background: lightskyblue;
 }
-.team .carousel .card .box{
+.team .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3 ease;
 }
-.team .carousel .card text{
+.team .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+.team .carousel .card text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.team .carousel .card img{
+.team .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid lightskyblue;
+  transition: all 0.3 ease;
+}
+.team .carousel .card:hover img {
+  border-color: crimson;
+}
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid lightskyblue !important;
+  transition: all 0.3 ease;
+}
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover {
+  background: lightskyblue;
 }
 /* responsive media query start */
 
